@@ -1,0 +1,6 @@
+{% extends "base.html" %} {% block title %}{% endblock %} {% block head %} {{
+super() }} {% endblock %} {% block page_content %}
+<main role="main" class="container">
+  <div class="row">{{data.text|safe}}</div>
+  {{data.page}} {% endblock %} {% block scripts %} {{ super() }} {% endblock %}
+</main>
